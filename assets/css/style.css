@@ -216,7 +216,7 @@ input[type=submit] {
   border: 0 none;
 }
 
-
+/*handles media queries 640px and below*/
 @media screen and (max-width: 640px) {
   .container {
     width: 100%;
@@ -229,7 +229,7 @@ input[type=submit] {
     position: static;
     z-index: 99;
     width: 100%;
-    max-width: 640px;
+  
     margin: 0;
     overflow: auto;
     color: #ffffff;
@@ -254,7 +254,31 @@ input[type=submit] {
     float:left;
     margin-top: 25px;
   }
+
+}
+/*handles media queries at 768px and less until next query kicks in*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    clear: both;
+  }
   
 
+
+}
+/*  media query for 980px and less */
+
+@media screen and (max-width: 980px) {
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width:768px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
 
 }
